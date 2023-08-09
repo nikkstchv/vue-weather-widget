@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import "@/assets/scss/constants.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    font-family: $font-family-main;
+    text-align: center;
+    color: $text-color;
+    max-width: 230px;
+}
+
+.right-bar {
+    position: relative;
+    width:fit-content;
+
+    &__fab-button {
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+    }
+}
+
+@import "@/assets/scss/weather-card/weather-card.scss";
+@import "@/assets/scss/settings-card/input-location.scss";
+@import "@/assets/scss/settings-card/location-list-item.scss";
+@import "@/assets/scss/settings-card/settings.scss";
+@import "@/assets/scss/transitions.scss";
